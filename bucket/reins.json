@@ -1,0 +1,35 @@
+{
+  "version": "4.9.2",
+  "description": "Reins CLI — self-hosted zero-trust remote operations (Windows first-class: PowerShell/service/GUI automation)",
+  "homepage": "https://github.com/V-T-V/reins",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/V-T-V/reins/releases/download/v4.9.2/reins-cli_4.9.2_windows_amd64.zip",
+      "hash": "92ae48c1c0567c512521031f09df352056bf522a2d73701477b738b835e1bb7b",
+      "bin": [
+        "reins.exe"
+      ]
+    },
+    "arm64": {
+      "url": "https://github.com/V-T-V/reins/releases/download/v4.9.2/reins-cli_4.9.2_windows_arm64.zip",
+      "hash": "39da882b961ac6400945e575abea39a66692f6ef5b9cae205e78dae155b0127a",
+      "bin": [
+        "reins.exe"
+      ]
+    }
+  },
+  "checkver": {
+    "github": "https://github.com/V-T-V/reins"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/V-T-V/reins/releases/download/v$version/reins-cli_$version_windows_amd64.zip"
+      },
+      "arm64": {
+        "url": "https://github.com/V-T-V/reins/releases/download/v$version/reins-cli_$version_windows_arm64.zip"
+      }
+    }
+  }
+}
